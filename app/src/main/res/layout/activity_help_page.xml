@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        tools:context=".HelpPage">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="294dp"
+            android:layout_height="249dp"
+            android:layout_below="@id/info1"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/screenshot_2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="294dp"
+            android:layout_height="249dp"
+            android:layout_below="@id/info2"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/screenshot_3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="294dp"
+            android:layout_height="249dp"
+            android:layout_below="@id/info3"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/screenshot_4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="304dp"
+            android:layout_height="222dp"
+            android:layout_below="@id/info4"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/screenshot_6"  />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="304dp"
+            android:layout_height="222dp"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/screenshot_1"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Help"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/info5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView5"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:text="When clicking on the &quot;My Graphs&quot; option, a page with all your saved graphs are loaded. Once one of them is selected, you will be taken to the page where you can edit them."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:gravity="center_horizontal"
+            android:text="You can add a node with the + button"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/info4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView4"
+            android:gravity="center_horizontal"
+            android:text="By clicking on an option in the dropdown menu, the weight of the MWST will be displayed or wheter or not the graph is connected."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView3"
+            android:gravity="center_horizontal"
+            android:text="The selected node will be highligted green, and the neighbouring nodes red. The weight of the edges from the selected node to the neighbouring nodes are displayed in the outlined textbox, where they can be changed."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:gravity="center_horizontal"
+            android:text="You can remove a node by clicking the x button. By clicking the neighbour button,all nodes which have an edge coming from the selected node are highlighted."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</ScrollView>

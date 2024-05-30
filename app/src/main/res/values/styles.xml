@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="stil_text_navigation_items">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/light_grey</item>
+        <item name="colorPrimaryDark">@color/dark_grey</item>
+        <item name="colorAccent">@color/light_green</item>
+        <item name="colorBackgroundFloating">@color/dark_grey</item>
+    </style>
+
+    <style name="DropdownListStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+        <item name="textFillColor">@color/white</item>
+        <item name="hintTextColor">@color/almost_white</item>
+    </style>
+
+    <style name="ButonVerdeStyle" >
+        <item name="color">@color/green</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/zeroDp</item>
+        <item name="android:paddingTop">@dimen/zeroDp</item>
+        <item name="android:paddingBottom">@dimen/zeroDp</item>
+        <item name="android:paddingRight">@dimen/zeroDp</item>
+    </style>
+
+    <style name="node_button_text_style">
+        <item name="singleLine">true</item>
+        <item name="textFillColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+</resources>

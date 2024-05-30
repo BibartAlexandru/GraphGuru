@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/create_graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Create Graph" />
+        <item
+            android:id="@+id/my_graphs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="My Graphs" />
+        <item
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Help" />
+        <item
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Logout" />
+    </group>
+</menu>

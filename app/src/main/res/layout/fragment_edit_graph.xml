@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C"
+    android:paddingBottom="20dp">
+
+    <RelativeLayout
+        android:id="@+id/edit_graph_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2C2C2C"
+        tools:context=".EditGraphFragment">
+
+        <EditText
+            android:id="@+id/graph_name_edit_text"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="Graph Name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#989898"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <TextView
+            android:id="@+id/size_text_view"
+            android:layout_width="81dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/graph_name_edit_text"
+            android:text="Size:"
+            android:textColor="#B9F898"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/graph_name_edit_text"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/size_number_text_view"
+            android:layout_width="56dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/size_text_view"
+            android:ems="10"
+            android:inputType="text"
+            android:text="20"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/size_text_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/save_graph_btn"
+            style="@style/ButonVerdeStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/graph_name_edit_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#6EA551"
+            android:text="Save"
+            android:textColor="#FFFFFF" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown_text_input_layout"
+            style="@style/DropdownListStyle"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/save_graph_btn"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/drop_down_list_choose">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:height="20dp"
+                android:inputType="none"
+                android:minHeight="48dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/save_graph_btn"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/dropdown_text_input_layout"
+            android:text="300"
+            android:textColor="#B9F898"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weight_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/save_graph_btn"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/result_text_view"
+            android:text="Weight:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</ScrollView>
