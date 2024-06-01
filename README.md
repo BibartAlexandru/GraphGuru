@@ -1,6 +1,6 @@
 # Graph Guru
 
-# An application for displaying graphs in the context of Graph Theory.
+## An application for displaying graphs in the context of Graph Theory.
 
 The functionalities are the following:
 
